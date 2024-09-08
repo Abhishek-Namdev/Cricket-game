@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only For Fun</title>
+    <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+    <h4>Bat Ball Stump Game</h4>
+<div id="container">
+    <button value="Bat" onclick=" computermovement(); compair(this.value); result(this.value); "> Bat </button>
+
+    <button value="Ball" onclick=" computermovement(); compair(this.value); result(this.value);">Ball</button>
+
+    <button value="Stump" onclick=" computermovement(); compair(this.value); result(this.value); ">Stump</button><br>
+
+    <button onclick=" restore()">Restart</button>
+</div>
+    <script src="cricket.js"></script>
+</body>
+</html>
