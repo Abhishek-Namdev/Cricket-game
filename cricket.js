@@ -23,7 +23,7 @@ function computermovement() {
     computerchoice ='Stump';
     }    
    };
-   function compair(value) {
+ function compair(value) {
     value;
     output;
     if (value === 'Bat') {
@@ -61,15 +61,19 @@ function computermovement() {
            }
        }  
     };
-   function result(value) {
+ function result(value) {
     localStorage.setItem('score', JSON.stringify(score));
-    alert(  `you have a chosen ${value}. computer choice is ${computerchoice}. and ${output} Won:${score.won}, Loss:${score.loss}, tie:${score.tie}`);
+    document.querySelector('#userMove').innerHTML = (value !== undefined ? `you have a chosen ${value}`:'');
+    document.querySelector('#computerMove').innerHTML =(value !== undefined ?  `computer choice is ${computerchoice}`:'');
+    document.querySelector('#result').innerHTML =value !== undefined ?  output :'';
+    document.querySelector('#score').innerHTML = (`Score:- Won:${score.won}, Loss:${score.loss}, tie:${score.tie}`);
    };
-   function restore() {
+ function restore() {
     localStorage.clear()
     score = {
         won: 0,
         loss: 0,
         tie: 0,
     }
+    result();
    }
