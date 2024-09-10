@@ -9,18 +9,18 @@
 <body>
     <h4>Bat Ball Stump Game</h4>
 <div id="container">
-    <button value="Bat" onclick=" computermovement(); compair(this.value); result(this.value); "> Bat </button>
+    <button class="btn" value="Bat" onclick=" computermovement(); compair(this.value); result(this.value); "> <img src="bat.png" alt="Bat image" class="image"></button>
 
-    <button value="Ball" onclick=" computermovement(); compair(this.value); result(this.value);">Ball</button>
+    <button class="btn" value="Ball" onclick=" computermovement(); compair(this.value); result(this.value);"><img src="ball.png" alt="Ball image" class="image"></button>
 
-    <button value="Stump" onclick=" computermovement(); compair(this.value); result(this.value); ">Stump</button><br>
-
-    <button onclick=" restore()">Restart</button>
+    <button class="btn" value="Stump" onclick=" computermovement(); compair(this.value); result(this.value); "><img src="stump.png" alt="Stump image" class="image"></button><br>
 </div>
-<div id="userMove" class="clickme"></div>
-<div id="computerMove" class="clickme"></div>
-<div id="result" class="clickme"></div>
-<div id="score" class="clickme"></div>
+   <div id="userMove" class="clickme"></div>
+   <div id="computerMove" class="clickme"></div>
+   <div id="result" class="clickme"></div>
+   <div id="score" class="clickme"></div>
+   <button class="Restart" onclick=" restore()">Restart</button>
+
     <script src="cricket.js"></script>
 </body>
 </html>
