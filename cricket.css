@@ -27,9 +27,18 @@ h4{
     animation: highlightname 3s infinite;
 }
 @keyframes highlightname{
-    0%{color: rgb(3, 3, 3);}
-    25%{color: rgba(235, 181, 33, 0.815);}
-    50%{color: rgba(197, 197, 197, 0.904);}
-    75%{color: rgba(224, 15, 15, 0.904);}
-    100%{color: rgba(218, 102, 7, 0.904);}
+    0%{color: rgb(0, 0, 0);}
+    25%{color: rgba(255, 0, 0, 0.815);}
+    50%{color: rgba(0, 255, 0, 0.904);}
+    75%{color: rgba(0, 0, 255, 0.904);}
+    100%{color: rgba(255, 255, 255, .658);}
+}
+.clickme{
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-shadow: 5px 5px 5px rgba(206, 129, 129, 0.904);
+    font-style: italic;
 }
